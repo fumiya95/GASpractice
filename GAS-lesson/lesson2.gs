@@ -14,6 +14,8 @@ function func2_1_2(){
   console.log('Hello');
   console.log('Hello');
   console.log('Hello');
+
+√  console.log('Hello');
   
 }
 
