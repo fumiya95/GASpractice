@@ -44,3 +44,10 @@ function func2_1_1() {
     a = 'Hello';
     console.log('a='+ a);
   }
+
+function func2_2_3(){
+  let n1 = 5;
+  let n2 = 3;
+  let ans = n1 + n2;
+  console.log(ans);
+  }
