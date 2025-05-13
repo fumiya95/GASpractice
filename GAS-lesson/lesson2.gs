@@ -33,3 +33,36 @@ function func2_2_9(){
   console.log('大文字に変換' + s2);
   console.log('文字列の長さ' + length);
 }
+function func2_3_1() {
+  //アクティブなスプレットシートを取得する
+  let spreadSheet = SpreadsheetApp.getActiveSpreadsheet();
+  //取得したスプレットシートの名前
+  console.log(spreadSheet.getName());
+}
+
+function func2_3_2(){
+  //スプレットシートID
+  let id = '1YtXtJzt7IT1tOM9R14enFdnWKZWKjuJhpm0ivBXr3do'
+  //idでスプレッドシートを取得する
+  let spreadSheet = SpreadsheetApp.openById(id);
+  //取得したスプレッドシートの名前を出力する
+  console.log('IDで取得' + spreadSheet.getName());
+}
+
+function func2_3_3(){
+  //スプレッドシートのURL
+  let url = 'https://docs.google.com/spreadsheets/d/1YtXtJzt7IT1tOM9R14enFdnWKZWKjuJhpm0ivBXr3do/edit?gid=0#gid=0'
+  //URLでスプレットシートを取得する
+  let spreadSheet = SpreadsheetApp.openByUrl(url);
+  //取得したスプレットシートの名前を出力する
+  console.log('URLで取得'+ spreadSheet.getName());
+}
+
+function func2_3_4(){
+  //アクティブなスプレットシートを取得
+  let spreadSheet = SpreadsheetApp.getActiveSpreadsheet();
+  //アクティブなシートを取得する
+  let sheet = spreadSheet.getActiveSheet();
+  //取得したシートの名前を出力する
+  console.log(sheet.getName());
+}
