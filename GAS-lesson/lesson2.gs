@@ -61,8 +61,8 @@ function func2_3_3(){
 function func2_3_4(){
   //アクティブなスプレットシートを取得
   let spreadSheet = SpreadsheetApp.getActiveSpreadsheet();
-  //アクティブなシートを取得する
+  //アクティブなシートを取得する。
   let sheet = spreadSheet.getActiveSheet();
-  //取得したシートの名前を出力する
+  //取得したシートの名前を出力する。
   console.log(sheet.getName());
 }
