@@ -52,9 +52,9 @@ function func2_3_2(){
 function func2_3_3(){
   //スプレッドシートのURL
   let url = 'https://docs.google.com/spreadsheets/d/1YtXtJzt7IT1tOM9R14enFdnWKZWKjuJhpm0ivBXr3do/edit?gid=0#gid=0'
-  //URLでスプレットシートを取得する
+  //URLでスプレットシートを取得する。
   let spreadSheet = SpreadsheetApp.openByUrl(url);
-  //取得したスプレットシートの名前を出力する
+  //取得したスプレットシートの名前を出力する。
   console.log('URLで取得'+ spreadSheet.getName());
 }
 
