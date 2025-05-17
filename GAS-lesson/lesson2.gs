@@ -13,7 +13,7 @@ function func2_1_1() {
     //変数a の値を変更する
     a = 10;
     console.log('a=' + a);
-    //変数a の値を変更する
+    //変数a の値を変更する。
     a = 'Hello';
     console.log('a='+ a);
   }
