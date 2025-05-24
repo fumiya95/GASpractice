@@ -34,7 +34,7 @@ function func2_2_9(){
   console.log('文字列の長さ' + length);
 }
 function func2_3_1() {
-  //アクティブなスプレットシートを取得する
+  //アクティブなスプレットシートを取得する。
   let spreadSheet = SpreadsheetApp.getActiveSpreadsheet();
   //取得したスプレットシートの名前。
   console.log(spreadSheet.getName());
