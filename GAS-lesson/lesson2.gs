@@ -1,7 +1,7 @@
 function func2_1_1() {
   //変数aの宣言。
   let a;
-  //変数の代入。
+  //変数の代入
   a = 10;
   console.log('a=' + a);
   }
