@@ -1,42 +1,7 @@
-function func2_1_1() {
-  //変数aの宣言。
-  let a;
-  //変数の代入
-  a = 10;
-  console.log('a=' + a);
-  }
-
-  function func2_2_2(){
-    //変数の宣言、初期化
-    let a = 1;
-    console.log('a=' + a);
-    //変数a の値を変更する。
-    a = 10;
-    console.log('a=' + a);
-    //変数a の値を変更する
-    a = 'Hello';
-    console.log('a='+ a);
-  }
-
-  function func2_2_3(){
-  let n1 = 5;
-  let n2 = 3;
-  let ans = n1 + n2;
-  console.log(ans);
-  }
-
-function func2_2_9(){
-  let s1 = 'Hello';
-  let s2 = s1.toUpperCase();
-  let length = s1.length
-  console.log('元の単語' + s1);
-  console.log('大文字に変換' + s2);
-  console.log('文字列の長さ' + length);
-}
 function func2_3_1() {
   //アクティブなスプレットシートを取得する
   let spreadSheet = SpreadsheetApp.getActiveSpreadsheet();
-  //取得したスプレットシートの名前。
+  //取得したスプレットシートの名前
   console.log(spreadSheet.getName());
 }
 
@@ -54,15 +19,39 @@ function func2_3_3(){
   let url = 'https://docs.google.com/spreadsheets/d/1YtXtJzt7IT1tOM9R14enFdnWKZWKjuJhpm0ivBXr3do/edit?gid=0#gid=0'
   //URLでスプレットシートを取得する
   let spreadSheet = SpreadsheetApp.openByUrl(url);
-  //取得したスプレットシートの名前を出力する。
+  //取得したスプレットシートの名前を出力する
   console.log('URLで取得'+ spreadSheet.getName());
 }
 
 function func2_3_4(){
   //アクティブなスプレットシートを取得
   let spreadSheet = SpreadsheetApp.getActiveSpreadsheet();
-  //アクティブなシートを取得する。
+  //アクティブなシートを取得する
   let sheet = spreadSheet.getActiveSheet();
-  //取得したシートの名前を出力する。
+  //取得したシートの名前を出力する
   console.log(sheet.getName());
 }
+
+function func2_3_5(){
+  //アクティブなシートを取得する
+  let sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  //B4の値を取得する
+  let value = sheet.getRange('B4').getValue();
+  console.log(' B4の値:' + value); 
+  //B6の値を変更する
+  sheet.getRange('B6').setValue('算数');
+  }
+
+
+function example2_3(){
+    //アクティブなシートを取得する
+    let sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    //english,japanese,mathの宣言と値の代入
+    let english = sheet.getRange('C4').getValue();
+    let japanese = sheet.getRange('C5').getValue();
+    let math = sheet.getRange('C6').getValue();
+    //3つの数の合計
+    let sum = english + japanese + math;
+    //C7に合計値を設定する
+    sheet.getRange('C7').setValue(sum);  
+    }
