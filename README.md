@@ -1,1 +1,1 @@
-# GASpractice
+# GASの練習ファイル
