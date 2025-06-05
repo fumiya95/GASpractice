@@ -80,7 +80,7 @@ function func3_2_2(){
 
 function func3_2_3(){
   let i = 0;
-  //while文にによる繰り返し
+  //while文にによる繰り返し。
   while (i < 5){
     i++;
     //iが２のときループの先頭に戻る
