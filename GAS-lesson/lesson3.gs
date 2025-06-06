@@ -71,7 +71,7 @@ function func3_2_2(){
   while (i < 5){
     console.log('i=' + i);
     i++;
-    //iが２のときにループを抜ける
+    //iが２のときにループを抜ける。
     if (i == 2){
       break;
     }
