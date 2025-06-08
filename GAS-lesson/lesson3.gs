@@ -83,7 +83,7 @@ function func3_2_3(){
   //while文にによる繰り返し。
   while (i < 5){
     i++;
-    //iが２のときループの先頭に戻る
+    //iが２のときループの先頭に戻る。
     if (i == 2){
       continue;
     }
