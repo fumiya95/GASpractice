@@ -144,7 +144,7 @@ range.setBorder(true, true, true,true, true,true);
 range.setHorizontalAlignment("center");
 //左上の文字をふと文字に
 sheet.getRange('A1').setFontWeight('bold');
-//最後の行の見た目をめゾッドちぇーんで変更
+//最後の行の見た目をめゾッドちぇーんで変更.
 sheet.getRange('A5:D5').setFontStyle('italic')
 .setFontFamily('Courier New')
 .setFontSize(12)
