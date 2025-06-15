@@ -151,3 +151,31 @@ sheet.getRange('A5:D5').setFontStyle('italic')
 .setFontColor('blue')
 .setBackground('silver');
 }
+function problem1() {
+  //アクティブなシートの取得
+  let sheet = SpreadsheetApp.getActiveSheet();
+  let value =sheet.getRange('A1').getValue();
+  
+  if(value % 2 == 0){
+  sheet.getRange('B1').setValue('偶数');
+  }else{
+    sheet.getRange('B1').setValue('奇数');
+  }
+console.log('syuuryou')
+}
+
+function problem2(){
+  //アクティブなシートの取得
+  let sheet = SpreadsheetApp.getActiveSheet();
+   sheet.clear()
+
+  let row = 1;
+  while (row <= 3){
+    sheet.getRange(row, 1).setValue("GAS!");
+    row++;
+  }
+ 
+
+
+}
+
