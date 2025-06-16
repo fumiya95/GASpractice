@@ -174,8 +174,5 @@ function problem2(){
     sheet.getRange(row, 1).setValue("GAS!");
     row++;
   }
- 
-
-
 }
 
