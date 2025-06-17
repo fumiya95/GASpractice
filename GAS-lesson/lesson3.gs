@@ -103,7 +103,7 @@ function func3_3_1() {
 }
 
 function func3_3_2(){
-  //アクティブなシートの取得.
+  //アクティブなシートの取得
   let sheet = SpreadsheetApp.getActiveSheet();
   //シートをクリア
   sheet.clear();
