@@ -169,7 +169,7 @@ function problem2(){
   let sheet = SpreadsheetApp.getActiveSheet();
    sheet.clear()
 
-  let row = 1;
+  let row = 1；；
   while (row <= 3){
     sheet.getRange(row, 1).setValue("GAS!");
     row++;
