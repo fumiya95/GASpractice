@@ -165,7 +165,7 @@ console.log('syuuryou')
 }
 
 function problem2(){
-  //アクティブなシートの取得。
+  //アクティブなシートの取得
   let sheet = SpreadsheetApp.getActiveSheet();
    sheet.clear()
 
